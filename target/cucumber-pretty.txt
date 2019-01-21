@@ -1,0 +1,232 @@
+Feature: API Testing
+
+  @EndtoEnd @Fetch
+  Scenario: Create Order -> Fetch Order -> ASSIGNING          # Features/test.feature:7
+    Given Order is created for Fetch Order "Inputs\\TC1.json" # Steps.order_is_created_for_Fetch_Order(String)
+    When user fetched the order once created                  # Steps.user_fetched_the_order_once_created()
+    Then Status should be ASSIGNING                           # Steps.status_should_be_ASSIGNING()
+
+  @EndtoEnd @Fetch
+  Scenario: Create Order ->Take Order ->  Fetch Order -> ONGOING # Features/test.feature:16
+    Given Order is created for ongoing order "Inputs\\TC2.json"  # Steps.order_is_created_for_ongoing_order(String)
+    And Order is taken by the driver                             # Steps.order_is_taken_by_the_driver()
+    When user fetched the order once taken                       # Steps.user_fetched_the_order_once_taken()
+    Then Status should be ONGOING                                # Steps.status_should_be_ONGOING()
+
+  @EndtoEnd @Fetch
+  Scenario: Create Order ->Take Order ->  Complete Order -> Fetch Order -> COMPLETED # Features/test.feature:26
+    Given Order is created for completed order "Inputs\\TC3.json"                    # Steps.order_is_created_for_completed_order(String)
+    And Order is taken by the driver for complete                                    # Steps.order_is_taken_by_the_driver_for_complete()
+    And Order is completed by the driver                                             # Steps.order_is_completed_by_the_driver()
+    When user fetched the order once completed                                       # Steps.user_fetched_the_order_once_completed()
+    Then Status should be COMPLETED                                                  # Steps.status_should_be_COMPLETED()
+
+  @EndtoEnd @Fetch
+  Scenario: Create Order ->Cancel Order ->  Fetch Order -> CANCELLED # Features/test.feature:36
+    Given Order is created for CANCELLED order "Inputs\\TC4.json"    # Steps.order_is_created_for_CANCELLED_order(String)
+    And Order is cancelled by the user                               # Steps.order_is_cancelled_by_the_user()
+    When user fetched the order once taken for cancel                # Steps.user_fetched_the_order_once_taken_for_cancel()
+    Then Status should be CANCELLED                                  # Steps.status_should_be_CANCELLED()
+
+  @EndtoEnd @Fetch
+  Scenario: Create Order ->Take order ->Cancel Order ->  Fetch Order -> CANCELLED # Features/test.feature:44
+    Given Order is created for take order CANCELLED order "Inputs\\TC5.json"      # Steps.order_is_created_for_take_order_CANCELLED_order(String)
+    And driver takes the order                                                    # Steps.driver_takes_the_order()
+    And Order is cancelled by the user after take                                 # Steps.order_is_cancelled_by_the_user_after_take()
+    When user fetched the order for cancel after take                             # Steps.user_fetched_the_order_for_cancel_after_take()
+    Then Status should be CANCELLED after take                                    # Steps.status_should_be_CANCELLED_after_take()
+
+  @EndtoEnd @Fetch
+  Scenario: Create Order -> Fetch Order -> Fetch Order again        # Features/test.feature:53
+    Given Order is created for Fetch Order again "Inputs\\TC6.json" # Steps.order_is_created_for_Fetch_Order_again(String)
+    And user fetches the order once created                         # Steps.user_fetches_the_order_once_created()
+    When user fetched the order again once created                  # Steps.user_fetched_the_order_again_once_created()
+    Then Status for fetch again should be ASSIGNING                 # Steps.status_for_fetch_again_should_be_ASSIGNING()
+
+  @EndtoEnd @Fetch
+  Scenario Outline: Test cases for Fetch Order - Incorrect values # Features/test.feature:61
+    When user hits it with incorrect order IDs <ID>
+    Then user should get following errors <Output>
+
+    Examples: 
+
+  @EndtoEnd @Fetch
+  Scenario Outline: Test cases for Fetch Order - Incorrect values # Features/test.feature:67
+    When user hits it with incorrect order IDs 100000             # Steps.user_hits_it_with_incorrect_order_IDs(Integer)
+    Then user should get following errors 404                     # Steps.user_should_get_following_errors(Integer)
+
+  @EndtoEnd @Fetch
+  Scenario Outline: Test cases for Fetch Order - Incorrect values # Features/test.feature:68
+    When user hits it with incorrect order IDs 500000             # Steps.user_hits_it_with_incorrect_order_IDs(Integer)
+    Then user should get following errors 404                     # Steps.user_should_get_following_errors(Integer)
+
+  @EndtoEnd @Post
+  Scenario: Placing order - one stop - Invalid                  # Features/test.feature:75
+    When user creates an order with one stop "Inputs\\TC8.json" # Steps.user_creates_an_order_with_one_stop(String)
+    Then Order should not be created for one stop               # Steps.order_should_not_be_created_for_one_stop()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - two valid stops                      # Features/test.feature:81
+    When user creates an order with two stops "Inputs\\TC9.json" # Steps.user_creates_an_order_with_two_stops(String)
+    Then Order should be created for two stops                   # Steps.order_should_be_created_for_two_stops()
+    And Amount is correct for two stops                          # Steps.amount_is_correct_for_two_stops()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - three valid stops                       # Features/test.feature:88
+    When user creates an order with three stops "Inputs\\TC10.json" # Steps.user_creates_an_order_with_three_stops(String)
+    Then Order should be created for three stops                    # Steps.order_should_be_created_for_three_stops()
+    And Amount is correct for three stops                           # Steps.amount_is_correct_for_three_stops()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - four valid stops                       # Features/test.feature:95
+    When user creates an order with four stops "Inputs\\TC11.json" # Steps.user_creates_an_order_with_four_stops(String)
+    Then Order should be created for four stops                    # Steps.order_should_be_created_for_four_stops()
+    And Amount is correct for four stops                           # Steps.amount_is_correct_for_four_stops()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - five valid stops                       # Features/test.feature:102
+    When user creates an order with five stops "Inputs\\TC12.json" # Steps.user_creates_an_order_with_five_stops(String)
+    Then Order should be created for five stops                    # Steps.order_should_be_created_for_five_stops()
+    And Amount is correct for five stops                           # Steps.amount_is_correct_for_five_stops()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - Duplicate stops                             # Features/test.feature:109
+    When user creates an order with duplicate stops "Inputs\\TC13.json" # Steps.user_creates_an_order_with_duplicate_stops(String)
+    Then Order should be created for duplicate stops                    # Steps.order_should_be_created_for_duplicate_stops()
+    And Amount is correct for duplicate stops                           # Steps.amount_is_correct_for_duplicate_stops()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - invalid                                      # Features/test.feature:116
+    When customer is placing an invalid json in body "Inputs\\TC14.json" # Steps.customer_is_placing_an_invalid_json_in_body(String)
+    Then Order should not be created                                     # Steps.order_should_not_be_created()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - Future                                                                    # Features/test.feature:122
+    When customer is placing a valid json in body with automatic future timestamp "Inputs\\TC50.json" # Steps.customer_is_placing_a_valid_json_in_body_with_automatic_future_timestamp(String)
+    Then Order should be created with future timestamp                                                # Steps.order_should_be_created_with_future_timestamp()
+
+  @EndtoEnd @Post
+  Scenario: Placing order - Past                                                                    # Features/test.feature:128
+    When customer is placing a valid json in body with automatic past timestamp "Inputs\\TC50.json" # Steps.customer_is_placing_a_valid_json_in_body_with_automatic_past_timestamp(String)
+    Then Order should not be created with past timestamp                                            # Steps.order_should_not_be_created_with_past_timestamp()
+
+  @EndtoEnd @Take
+  Scenario: Take order - Valid                               # Features/test.feature:136
+    Given User creates an order for take "Inputs\\TC17.json" # Steps.user_creates_an_order_for_take(String)
+    When Driver takes the order for the scenario             # Steps.driver_takes_the_order_for_the_scenario()
+    Then Take should be successful                           # Steps.take_should_be_successful()
+
+  @EndtoEnd @Take
+  Scenario: Take already taken order                                           # Features/test.feature:144
+    Given User creates an order for already taken scenario "Inputs\\TC18.json" # Steps.user_creates_an_order_for_already_taken_scenario(String)
+    And driver takes the order first                                           # Steps.driver_takes_the_order_first()
+    When Driver takes the order for the second time                            # Steps.driver_takes_the_order_for_the_second_time()
+    Then Take should not be successful for second time                         # Steps.take_should_not_be_successful_for_second_time()
+
+  @EndtoEnd @Take
+  Scenario: Test cases for Take Order- Incorrect     # Features/test.feature:152
+    When driver takes order with incorrect ID 100000 # Steps.driver_takes_order_with_incorrect_ID(Integer)
+    Then driver should get error for Incorrect Take  # Steps.driver_should_get_error_for_Incorrect_Take()
+
+  @EndtoEnd @Take
+  Scenario: Take completed order                                                   # Features/test.feature:158
+    Given User creates an order for already completed scenario "Inputs\\TC20.json" # Steps.user_creates_an_order_for_already_completed_scenario(String)
+    And driver takes the order for scenario completed                              # Steps.driver_takes_the_order_for_scenario_completed()
+    And driver completes the order for scenario completed                          # Steps.driver_completes_the_order_for_scenario_completed()
+    When Driver takes the order again for completed order                          # Steps.driver_takes_the_order_again_for_completed_order()
+    Then Take should not be successful for completed order                         # Steps.take_should_not_be_successful_for_completed_order()
+
+  @EndtoEnd @Take
+  Scenario: Take cancelled after create order                                                 # Features/test.feature:167
+    Given User creates an order for cancelled order after create scenario "Inputs\\TC21.json" # Steps.user_creates_an_order_for_cancelled_order_after_create_scenario(String)
+    And driver cancels the order for cancelled order after create                             # Steps.driver_cancels_the_order_for_cancelled_order_after_create()
+    When Driver takes the order again for cancelled order after create                        # Steps.driver_takes_the_order_again_for_cancelled_order_after_create()
+    Then Take should not be successful for cancelled order after create                       # Steps.take_should_not_be_successful_for_cancelled_order_after_create()
+
+  @EndtoEnd @Take
+  Scenario: Take cancelled after take order                                                 # Features/test.feature:175
+    Given User creates an order for cancelled order after take scenario "Inputs\\TC22.json" # Steps.user_creates_an_order_for_cancelled_order_after_take_scenario(String)
+    And driver takes the order for scenario cancellation after take                         # Steps.driver_takes_the_order_for_scenario_cancellation_after_take()
+    And driver cancels the order for cancelled order after take                             # Steps.driver_cancels_the_order_for_cancelled_order_after_take()
+    When Driver takes the order againn for cancelled order after take                       # Steps.driver_takes_the_order_againn_for_cancelled_order_after_take()
+    Then Take should not be successful for cancelled order after take                       # Steps.take_should_not_be_successful_for_cancelled_order_after_take()
+
+  @EndtoEnd @Complete
+  Scenario: Complete order - Valid                               # Features/test.feature:188
+    Given User creates an order for complete "Inputs\\TC23.json" # Steps.user_creates_an_order_for_complete(String)
+    And Driver takes the order for the scenario complete         # Steps.driver_takes_the_order_for_the_scenario_complete()
+    When Driver completes the order for valid scenario           # Steps.driver_completes_the_order_for_valid_scenario()
+    Then complete should be successful for valid scenario        # Steps.complete_should_be_successful_for_valid_scenario()
+
+  @EndtoEnd @Complete
+  Scenario: Complete order - before take                                     # Features/test.feature:196
+    Given User creates an order for complete before take "Inputs\\TC24.json" # Steps.user_creates_an_order_for_complete_before_take(String)
+    When Driver completes the order before take                              # Steps.driver_completes_the_order_before_take()
+    Then complete should be not be successful before take                    # Steps.complete_should_be_not_be_successful_before_take()
+
+  @EndtoEnd @Complete
+  Scenario: Complete order - after create-> cancel                                        # Features/test.feature:203
+    Given User creates an order for completing after create -> cancel "Inputs\\TC25.json" # Steps.user_creates_an_order_for_completing_after_create_cancel(String)
+    And driver cancels the order for the scenario create -> complete                      # Steps.driver_cancels_the_order_for_the_scenario_create_complete()
+    When Driver completes the order after create -> cancel                                # Steps.driver_completes_the_order_after_create_cancel()
+    Then complete should be not be successful after create -> cancel                      # Steps.complete_should_be_not_be_successful_after_create_cancel()
+
+  @EndtoEnd @Complete
+  Scenario: Complete order - after create-> Take -> cancel                                         # Features/test.feature:211
+    Given User creates an order for completing after create -> take ->  cancel "Inputs\\TC26.json" # Steps.user_creates_an_order_for_completing_after_create_take_cancel(String)
+    And driver takes the order for scenario create -> take -> complete                             # Steps.driver_takes_the_order_for_scenario_create_take_complete()
+    And driver cancels the order for the scenario create -> take -> complete                       # Steps.driver_cancels_the_order_for_the_scenario_create_take_complete()
+    When Driver completes the order after create -> take -> cancel                                 # Steps.driver_completes_the_order_after_create_take_cancel()
+    Then complete should be not be successful after create -> take -> cancel                       # Steps.complete_should_be_not_be_successful_after_create_take_cancel()
+
+  @EndtoEnd @Complete
+  Scenario: Complete order - already completed one                                                # Features/test.feature:220
+    Given User creates an order for completing for scenario already completed "Inputs\\TC27.json" # Steps.user_creates_an_order_for_completing_for_scenario_already_completed(String)
+    And driver takes the order for scenario already completed                                     # Steps.driver_takes_the_order_for_scenario_already_completed()
+    And driver completes the order for the first time for scenario already completed              # Steps.driver_completes_the_order_for_the_first_time_for_scenario_already_completed()
+    When Driver completes the order for the second time                                           # Steps.driver_completes_the_order_for_the_second_time()
+    Then complete should be not be successful for already completed order                         # Steps.complete_should_be_not_be_successful_for_already_completed_order()
+
+  @EndtoEnd @Complete
+  Scenario: Complete order - incorrect order                 # Features/test.feature:229
+    When user completes incorrect order with order ID 100000 # Steps.user_completes_incorrect_order_with_order_ID(Integer)
+    Then complete order should not be successful             # Steps.complete_order_should_not_be_successful()
+
+  @EndtoEnd @Cancel
+  Scenario: Cancel order after creation                              # Features/test.feature:239
+    Given User creates an order for cancellation "Inputs\\TC29.json" # Steps.user_creates_an_order_for_cancellation(String)
+    When user cancels the order after create                         # Steps.user_cancels_the_order_after_create()
+    Then cancellation should be successful after order creation      # Steps.cancellation_should_be_successful_after_order_creation()
+
+  @EndtoEnd @Cancel
+  Scenario: Cancel order after creation -> Take                                 # Features/test.feature:246
+    Given User creates an order for cancellation after take "Inputs\\TC30.json" # Steps.user_creates_an_order_for_cancellation_after_take(String)
+    And Driver takes the order for cancellation for scenario create -> take     # Steps.driver_takes_the_order_for_cancellation_for_scenario_create_take()
+    When user cancels the order after take                                      # Steps.user_cancels_the_order_after_take()
+    Then cancellation should be successful after take                           # Steps.cancellation_should_be_successful_after_take()
+
+  @EndtoEnd @Cancel
+  Scenario: Cancel order after completion                                           # Features/test.feature:254
+    Given User creates an order for cancellation after complete "Inputs\\TC31.json" # Steps.user_creates_an_order_for_cancellation_after_complete(String)
+    And driver takes the order for cancellation after complete                      # Steps.driver_takes_the_order_for_cancellation_after_complete()
+    And driver completes the order for cancellation after complete                  # Steps.driver_completes_the_order_for_cancellation_after_complete()
+    When user cancels the order after completion                                    # Steps.user_cancels_the_order_after_completion()
+    Then cancellation should not be successful after order completion               # Steps.cancellation_should_not_be_successful_after_order_completion()
+
+  @EndtoEnd @Cancel
+  Scenario: Cancel already cancelled order                                        # Features/test.feature:263
+    Given User creates an order for cancellation after cancel "Inputs\\TC32.json" # Steps.user_creates_an_order_for_cancellation_after_cancel(String)
+    And Driver takes the order for cancellation after cancel -> take              # Steps.driver_takes_the_order_for_cancellation_after_cancel_take()
+    And driver cancels the order for the first time                               # Steps.driver_cancels_the_order_for_the_first_time()
+    When user cancels the order again                                             # Steps.user_cancels_the_order_again()
+    Then cancellation should not be successful for already cancelled order        # Steps.cancellation_should_not_be_successful_for_already_cancelled_order()
+      java.lang.AssertionError: Expected Result: Status 422  Actual Result : 200
+	at org.junit.Assert.fail(Assert.java:88)
+	at StepDefinition.Steps.cancellation_should_not_be_successful_for_already_cancelled_order(Steps.java:1154)
+	at ✽.cancellation should not be successful for already cancelled order(Features/test.feature:268)
+
+
+  @EndtoEnd @Cancel
+  Scenario: Cancel order - incorrect order                 # Features/test.feature:272
+    When user cancels incorrect order with order ID 100000 # Steps.user_cancels_incorrect_order_with_order_ID(Integer)
+    Then cancel order should not be successful             # Steps.cancel_order_should_not_be_successful()

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="34" time="15.663988">
+<testcase classname="API Testing" name="Create Order -&gt; Fetch Order -&gt; ASSIGNING" time="3.801861">
+<system-out><![CDATA[Given Order is created for Fetch Order "Inputs\\TC1.json"...................passed
+When user fetched the order once created....................................passed
+Then Status should be ASSIGNING.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Create Order -&gt;Take Order -&gt;  Fetch Order -&gt; ONGOING" time="0.500839">
+<system-out><![CDATA[Given Order is created for ongoing order "Inputs\\TC2.json".................passed
+And Order is taken by the driver............................................passed
+When user fetched the order once taken......................................passed
+Then Status should be ONGOING...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Create Order -&gt;Take Order -&gt;  Complete Order -&gt; Fetch Order -&gt; COMPLETED" time="0.948573">
+<system-out><![CDATA[Given Order is created for completed order "Inputs\\TC3.json"...............passed
+And Order is taken by the driver for complete...............................passed
+And Order is completed by the driver........................................passed
+When user fetched the order once completed..................................passed
+Then Status should be COMPLETED.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Create Order -&gt;Cancel Order -&gt;  Fetch Order -&gt; CANCELLED" time="0.426507">
+<system-out><![CDATA[Given Order is created for CANCELLED order "Inputs\\TC4.json"...............passed
+And Order is cancelled by the user..........................................passed
+When user fetched the order once taken for cancel...........................passed
+Then Status should be CANCELLED.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Create Order -&gt;Take order -&gt;Cancel Order -&gt;  Fetch Order -&gt; CANCELLED" time="0.831223">
+<system-out><![CDATA[Given Order is created for take order CANCELLED order "Inputs\\TC5.json"....passed
+And driver takes the order..................................................passed
+And Order is cancelled by the user after take...............................passed
+When user fetched the order for cancel after take...........................passed
+Then Status should be CANCELLED after take..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Create Order -&gt; Fetch Order -&gt; Fetch Order again" time="0.42297">
+<system-out><![CDATA[Given Order is created for Fetch Order again "Inputs\\TC6.json".............passed
+And user fetches the order once created.....................................passed
+When user fetched the order again once created..............................passed
+Then Status for fetch again should be ASSIGNING.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Test cases for Fetch Order - Incorrect values" time="0.321102">
+<system-out><![CDATA[When user hits it with incorrect order IDs 100000...........................passed
+Then user should get following errors 404...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Test cases for Fetch Order - Incorrect values 2" time="0.028193">
+<system-out><![CDATA[When user hits it with incorrect order IDs 500000...........................passed
+Then user should get following errors 404...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - one stop - Invalid" time="0.023388">
+<system-out><![CDATA[When user creates an order with one stop "Inputs\\TC8.json".................passed
+Then Order should not be created for one stop...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - two valid stops" time="0.264423">
+<system-out><![CDATA[When user creates an order with two stops "Inputs\\TC9.json"................passed
+Then Order should be created for two stops..................................passed
+And Amount is correct for two stops.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - three valid stops" time="0.341519">
+<system-out><![CDATA[When user creates an order with three stops "Inputs\\TC10.json".............passed
+Then Order should be created for three stops................................passed
+And Amount is correct for three stops.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - four valid stops" time="0.346384">
+<system-out><![CDATA[When user creates an order with four stops "Inputs\\TC11.json"..............passed
+Then Order should be created for four stops.................................passed
+And Amount is correct for four stops........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - five valid stops" time="0.273128">
+<system-out><![CDATA[When user creates an order with five stops "Inputs\\TC12.json"..............passed
+Then Order should be created for five stops.................................passed
+And Amount is correct for five stops........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - Duplicate stops" time="0.442413">
+<system-out><![CDATA[When user creates an order with duplicate stops "Inputs\\TC13.json".........passed
+Then Order should be created for duplicate stops............................passed
+And Amount is correct for duplicate stops...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - invalid" time="0.038483">
+<system-out><![CDATA[When customer is placing an invalid json in body "Inputs\\TC14.json"........passed
+Then Order should not be created............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - Future" time="0.322885">
+<system-out><![CDATA[When customer is placing a valid json in body with automatic future timestamp "Inputs\\TC50.json".passed
+Then Order should be created with future timestamp..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Placing order - Past" time="0.019425">
+<system-out><![CDATA[When customer is placing a valid json in body with automatic past timestamp "Inputs\\TC50.json".passed
+Then Order should not be created with past timestamp........................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Take order - Valid" time="0.37683">
+<system-out><![CDATA[Given User creates an order for take "Inputs\\TC17.json"....................passed
+When Driver takes the order for the scenario................................passed
+Then Take should be successful..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Take already taken order" time="0.348437">
+<system-out><![CDATA[Given User creates an order for already taken scenario "Inputs\\TC18.json"..passed
+And driver takes the order first............................................passed
+When Driver takes the order for the second time.............................passed
+Then Take should not be successful for second time..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Test cases for Take Order- Incorrect" time="0.019215">
+<system-out><![CDATA[When driver takes order with incorrect ID 100000............................passed
+Then driver should get error for Incorrect Take.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Take completed order" time="0.417758">
+<system-out><![CDATA[Given User creates an order for already completed scenario "Inputs\\TC20.json".passed
+And driver takes the order for scenario completed...........................passed
+And driver completes the order for scenario completed.......................passed
+When Driver takes the order again for completed order.......................passed
+Then Take should not be successful for completed order......................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Take cancelled after create order" time="0.672586">
+<system-out><![CDATA[Given User creates an order for cancelled order after create scenario "Inputs\\TC21.json".passed
+And driver cancels the order for cancelled order after create...............passed
+When Driver takes the order again for cancelled order after create..........passed
+Then Take should not be successful for cancelled order after create.........passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Take cancelled after take order" time="0.5602">
+<system-out><![CDATA[Given User creates an order for cancelled order after take scenario "Inputs\\TC22.json".passed
+And driver takes the order for scenario cancellation after take.............passed
+And driver cancels the order for cancelled order after take.................passed
+When Driver takes the order againn for cancelled order after take...........passed
+Then Take should not be successful for cancelled order after take...........passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Complete order - Valid" time="0.684012">
+<system-out><![CDATA[Given User creates an order for complete "Inputs\\TC23.json"................passed
+And Driver takes the order for the scenario complete........................passed
+When Driver completes the order for valid scenario..........................passed
+Then complete should be successful for valid scenario.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Complete order - before take" time="0.434733">
+<system-out><![CDATA[Given User creates an order for complete before take "Inputs\\TC24.json"....passed
+When Driver completes the order before take.................................passed
+Then complete should be not be successful before take.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Complete order - after create-&gt; cancel" time="0.302979">
+<system-out><![CDATA[Given User creates an order for completing after create -> cancel "Inputs\\TC25.json".passed
+And driver cancels the order for the scenario create -> complete............passed
+When Driver completes the order after create -> cancel......................passed
+Then complete should be not be successful after create -> cancel............passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Complete order - after create-&gt; Take -&gt; cancel" time="0.447675">
+<system-out><![CDATA[Given User creates an order for completing after create -> take ->  cancel "Inputs\\TC26.json".passed
+And driver takes the order for scenario create -> take -> complete..........passed
+And driver cancels the order for the scenario create -> take -> complete....passed
+When Driver completes the order after create -> take -> cancel..............passed
+Then complete should be not be successful after create -> take -> cancel....passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Complete order - already completed one" time="0.460369">
+<system-out><![CDATA[Given User creates an order for completing for scenario already completed "Inputs\\TC27.json".passed
+And driver takes the order for scenario already completed...................passed
+And driver completes the order for the first time for scenario already completed.passed
+When Driver completes the order for the second time.........................passed
+Then complete should be not be successful for already completed order.......passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Complete order - incorrect order" time="0.027556">
+<system-out><![CDATA[When user completes incorrect order with order ID 100000....................passed
+Then complete order should not be successful................................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Cancel order after creation" time="0.285947">
+<system-out><![CDATA[Given User creates an order for cancellation "Inputs\\TC29.json"............passed
+When user cancels the order after create....................................passed
+Then cancellation should be successful after order creation.................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Cancel order after creation -&gt; Take" time="0.502209">
+<system-out><![CDATA[Given User creates an order for cancellation after take "Inputs\\TC30.json".passed
+And Driver takes the order for cancellation for scenario create -> take.....passed
+When user cancels the order after take......................................passed
+Then cancellation should be successful after take...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Cancel order after completion" time="0.398197">
+<system-out><![CDATA[Given User creates an order for cancellation after complete "Inputs\\TC31.json".passed
+And driver takes the order for cancellation after complete..................passed
+And driver completes the order for cancellation after complete..............passed
+When user cancels the order after completion................................passed
+Then cancellation should not be successful after order completion...........passed
+]]></system-out>
+</testcase>
+<testcase classname="API Testing" name="Cancel already cancelled order" time="0.341651">
+<failure message="java.lang.AssertionError: Expected Result: Status 422  Actual Result : 200&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at StepDefinition.Steps.cancellation_should_not_be_successful_for_already_cancelled_order(Steps.java:1154)&#13;&#10;&#9;at ✽.cancellation should not be successful for already cancelled order(Features/test.feature:268)&#13;&#10;"><![CDATA[Given User creates an order for cancellation after cancel "Inputs\\TC32.json".passed
+And Driver takes the order for cancellation after cancel -> take............passed
+And driver cancels the order for the first time.............................passed
+When user cancels the order again...........................................passed
+Then cancellation should not be successful for already cancelled order......failed
+
+StackTrace:
+java.lang.AssertionError: Expected Result: Status 422  Actual Result : 200
+	at org.junit.Assert.fail(Assert.java:88)
+	at StepDefinition.Steps.cancellation_should_not_be_successful_for_already_cancelled_order(Steps.java:1154)
+	at ✽.cancellation should not be successful for already cancelled order(Features/test.feature:268)
+]]></failure>
+</testcase>
+<testcase classname="API Testing" name="Cancel order - incorrect order" time="0.030318">
+<system-out><![CDATA[When user cancels incorrect order with order ID 100000......................passed
+Then cancel order should not be successful..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

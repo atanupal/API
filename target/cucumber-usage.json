@@ -1,0 +1,2071 @@
+[
+  {
+    "source": "User creates an order for already taken scenario {string}",
+    "steps": [
+      {
+        "name": "User creates an order for already taken scenario \"Inputs\\\\TC18.json\"",
+        "aggregatedDurations": {
+          "average": 0.3014798,
+          "median": 0.3014798
+        },
+        "durations": [
+          {
+            "duration": 0.3014798,
+            "location": "Features/test.feature:145"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Status should be ONGOING",
+    "steps": [
+      {
+        "name": "Status should be ONGOING",
+        "aggregatedDurations": {
+          "average": 0.0003382,
+          "median": 0.0003382
+        },
+        "durations": [
+          {
+            "duration": 0.0003382,
+            "location": "Features/test.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver completes the order for cancellation after complete",
+    "steps": [
+      {
+        "name": "driver completes the order for cancellation after complete",
+        "aggregatedDurations": {
+          "average": 0.0465939,
+          "median": 0.0465939
+        },
+        "durations": [
+          {
+            "duration": 0.0465939,
+            "location": "Features/test.feature:257"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user fetched the order once completed",
+    "steps": [
+      {
+        "name": "user fetched the order once completed",
+        "aggregatedDurations": {
+          "average": 0.2891707,
+          "median": 0.2891707
+        },
+        "durations": [
+          {
+            "duration": 0.2891707,
+            "location": "Features/test.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user fetched the order again once created",
+    "steps": [
+      {
+        "name": "user fetched the order again once created",
+        "aggregatedDurations": {
+          "average": 0.0389107,
+          "median": 0.0389107
+        },
+        "durations": [
+          {
+            "duration": 0.0389107,
+            "location": "Features/test.feature:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is taken by the driver",
+    "steps": [
+      {
+        "name": "Order is taken by the driver",
+        "aggregatedDurations": {
+          "average": 0.0621601,
+          "median": 0.0621601
+        },
+        "durations": [
+          {
+            "duration": 0.0621601,
+            "location": "Features/test.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for cancellation {string}",
+    "steps": [
+      {
+        "name": "User creates an order for cancellation \"Inputs\\\\TC29.json\"",
+        "aggregatedDurations": {
+          "average": 0.2647105,
+          "median": 0.2647105
+        },
+        "durations": [
+          {
+            "duration": 0.2647105,
+            "location": "Features/test.feature:240"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes the order for scenario create -\u003e take -\u003e complete",
+    "steps": [
+      {
+        "name": "driver takes the order for scenario create -\u003e take -\u003e complete",
+        "aggregatedDurations": {
+          "average": 0.0249566,
+          "median": 0.0249566
+        },
+        "durations": [
+          {
+            "duration": 0.0249566,
+            "location": "Features/test.feature:213"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order for the scenario",
+    "steps": [
+      {
+        "name": "Driver takes the order for the scenario",
+        "aggregatedDurations": {
+          "average": 0.0425629,
+          "median": 0.0425629
+        },
+        "durations": [
+          {
+            "duration": 0.0425629,
+            "location": "Features/test.feature:138"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should not be created for one stop",
+    "steps": [
+      {
+        "name": "Order should not be created for one stop",
+        "aggregatedDurations": {
+          "average": 0.001305,
+          "median": 0.001305
+        },
+        "durations": [
+          {
+            "duration": 0.001305,
+            "location": "Features/test.feature:77"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for cancellation after complete {string}",
+    "steps": [
+      {
+        "name": "User creates an order for cancellation after complete \"Inputs\\\\TC31.json\"",
+        "aggregatedDurations": {
+          "average": 0.288366,
+          "median": 0.288366
+        },
+        "durations": [
+          {
+            "duration": 0.288366,
+            "location": "Features/test.feature:255"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order again for completed order",
+    "steps": [
+      {
+        "name": "Driver takes the order again for completed order",
+        "aggregatedDurations": {
+          "average": 0.027164,
+          "median": 0.027164
+        },
+        "durations": [
+          {
+            "duration": 0.027164,
+            "location": "Features/test.feature:162"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Amount is correct for five stops",
+    "steps": [
+      {
+        "name": "Amount is correct for five stops",
+        "aggregatedDurations": {
+          "average": 0.0010085,
+          "median": 0.0010085
+        },
+        "durations": [
+          {
+            "duration": 0.0010085,
+            "location": "Features/test.feature:105"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes the order for scenario completed",
+    "steps": [
+      {
+        "name": "driver takes the order for scenario completed",
+        "aggregatedDurations": {
+          "average": 0.0379184,
+          "median": 0.0379184
+        },
+        "durations": [
+          {
+            "duration": 0.0379184,
+            "location": "Features/test.feature:160"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Status should be CANCELLED after take",
+    "steps": [
+      {
+        "name": "Status should be CANCELLED after take",
+        "aggregatedDurations": {
+          "average": 0.0002029,
+          "median": 0.0002029
+        },
+        "durations": [
+          {
+            "duration": 0.0002029,
+            "location": "Features/test.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should be created for duplicate stops",
+    "steps": [
+      {
+        "name": "Order should be created for duplicate stops",
+        "aggregatedDurations": {
+          "average": 0.0009992,
+          "median": 0.0009992
+        },
+        "durations": [
+          {
+            "duration": 0.0009992,
+            "location": "Features/test.feature:111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes the order for scenario cancellation after take",
+    "steps": [
+      {
+        "name": "driver takes the order for scenario cancellation after take",
+        "aggregatedDurations": {
+          "average": 0.0213756,
+          "median": 0.0213756
+        },
+        "durations": [
+          {
+            "duration": 0.0213756,
+            "location": "Features/test.feature:177"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Amount is correct for four stops",
+    "steps": [
+      {
+        "name": "Amount is correct for four stops",
+        "aggregatedDurations": {
+          "average": 0.0010698,
+          "median": 0.0010698
+        },
+        "durations": [
+          {
+            "duration": 0.0010698,
+            "location": "Features/test.feature:98"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order for the scenario complete",
+    "steps": [
+      {
+        "name": "Driver takes the order for the scenario complete",
+        "aggregatedDurations": {
+          "average": 0.0194727,
+          "median": 0.0194727
+        },
+        "durations": [
+          {
+            "duration": 0.0194727,
+            "location": "Features/test.feature:190"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user fetched the order once created",
+    "steps": [
+      {
+        "name": "user fetched the order once created",
+        "aggregatedDurations": {
+          "average": 0.4346643,
+          "median": 0.4346643
+        },
+        "durations": [
+          {
+            "duration": 0.4346643,
+            "location": "Features/test.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Status should be ASSIGNING",
+    "steps": [
+      {
+        "name": "Status should be ASSIGNING",
+        "aggregatedDurations": {
+          "average": 0.0009783,
+          "median": 0.0009783
+        },
+        "durations": [
+          {
+            "duration": 0.0009783,
+            "location": "Features/test.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Take should be successful",
+    "steps": [
+      {
+        "name": "Take should be successful",
+        "aggregatedDurations": {
+          "average": 0.0006909,
+          "median": 0.0006909
+        },
+        "durations": [
+          {
+            "duration": 0.0006909,
+            "location": "Features/test.feature:139"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Amount is correct for two stops",
+    "steps": [
+      {
+        "name": "Amount is correct for two stops",
+        "aggregatedDurations": {
+          "average": 0.0155743,
+          "median": 0.0155743
+        },
+        "durations": [
+          {
+            "duration": 0.0155743,
+            "location": "Features/test.feature:84"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver completes the order after create -\u003e cancel",
+    "steps": [
+      {
+        "name": "Driver completes the order after create -\u003e cancel",
+        "aggregatedDurations": {
+          "average": 0.0320062,
+          "median": 0.0320062
+        },
+        "durations": [
+          {
+            "duration": 0.0320062,
+            "location": "Features/test.feature:206"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order again for cancelled order after create",
+    "steps": [
+      {
+        "name": "Driver takes the order again for cancelled order after create",
+        "aggregatedDurations": {
+          "average": 0.2614458,
+          "median": 0.2614458
+        },
+        "durations": [
+          {
+            "duration": 0.2614458,
+            "location": "Features/test.feature:170"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is created for CANCELLED order {string}",
+    "steps": [
+      {
+        "name": "Order is created for CANCELLED order \"Inputs\\\\TC4.json\"",
+        "aggregatedDurations": {
+          "average": 0.3389959,
+          "median": 0.3389959
+        },
+        "durations": [
+          {
+            "duration": 0.3389959,
+            "location": "Features/test.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "complete should be not be successful after create -\u003e take -\u003e cancel",
+    "steps": [
+      {
+        "name": "complete should be not be successful after create -\u003e take -\u003e cancel",
+        "aggregatedDurations": {
+          "average": 0.0008735,
+          "median": 0.0008735
+        },
+        "durations": [
+          {
+            "duration": 0.0008735,
+            "location": "Features/test.feature:216"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user should get following errors {int}",
+    "steps": [
+      {
+        "name": "user should get following errors 404",
+        "aggregatedDurations": {
+          "average": 0.000314,
+          "median": 0.000314
+        },
+        "durations": [
+          {
+            "duration": 0.0003796,
+            "location": "Features/test.feature:63"
+          },
+          {
+            "duration": 0.0002484,
+            "location": "Features/test.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "cancellation should not be successful after order completion",
+    "steps": [
+      {
+        "name": "cancellation should not be successful after order completion",
+        "aggregatedDurations": {
+          "average": 0.0008039,
+          "median": 0.0008039
+        },
+        "durations": [
+          {
+            "duration": 0.0008039,
+            "location": "Features/test.feature:259"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver cancels the order for cancelled order after take",
+    "steps": [
+      {
+        "name": "driver cancels the order for cancelled order after take",
+        "aggregatedDurations": {
+          "average": 0.0999319,
+          "median": 0.0999319
+        },
+        "durations": [
+          {
+            "duration": 0.0999319,
+            "location": "Features/test.feature:178"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should not be created with past timestamp",
+    "steps": [
+      {
+        "name": "Order should not be created with past timestamp",
+        "aggregatedDurations": {
+          "average": 0.0013632,
+          "median": 0.0013632
+        },
+        "durations": [
+          {
+            "duration": 0.0013632,
+            "location": "Features/test.feature:130"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver cancels the order for the scenario create -\u003e complete",
+    "steps": [
+      {
+        "name": "driver cancels the order for the scenario create -\u003e complete",
+        "aggregatedDurations": {
+          "average": 0.0348702,
+          "median": 0.0348702
+        },
+        "durations": [
+          {
+            "duration": 0.0348702,
+            "location": "Features/test.feature:205"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver completes the order for the second time",
+    "steps": [
+      {
+        "name": "Driver completes the order for the second time",
+        "aggregatedDurations": {
+          "average": 0.0218154,
+          "median": 0.0218154
+        },
+        "durations": [
+          {
+            "duration": 0.0218154,
+            "location": "Features/test.feature:224"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver completes the order after create -\u003e take -\u003e cancel",
+    "steps": [
+      {
+        "name": "Driver completes the order after create -\u003e take -\u003e cancel",
+        "aggregatedDurations": {
+          "average": 0.0217312,
+          "median": 0.0217312
+        },
+        "durations": [
+          {
+            "duration": 0.0217312,
+            "location": "Features/test.feature:215"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is created for Fetch Order {string}",
+    "steps": [
+      {
+        "name": "Order is created for Fetch Order \"Inputs\\\\TC1.json\"",
+        "aggregatedDurations": {
+          "average": 3.3621874,
+          "median": 3.3621874
+        },
+        "durations": [
+          {
+            "duration": 3.3621874,
+            "location": "Features/test.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user fetches the order once created",
+    "steps": [
+      {
+        "name": "user fetches the order once created",
+        "aggregatedDurations": {
+          "average": 0.0469447,
+          "median": 0.0469447
+        },
+        "durations": [
+          {
+            "duration": 0.0469447,
+            "location": "Features/test.feature:55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user creates an order with one stop {string}",
+    "steps": [
+      {
+        "name": "user creates an order with one stop \"Inputs\\\\TC8.json\"",
+        "aggregatedDurations": {
+          "average": 0.0218749,
+          "median": 0.0218749
+        },
+        "durations": [
+          {
+            "duration": 0.0218749,
+            "location": "Features/test.feature:76"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is created for completed order {string}",
+    "steps": [
+      {
+        "name": "Order is created for completed order \"Inputs\\\\TC3.json\"",
+        "aggregatedDurations": {
+          "average": 0.3541637,
+          "median": 0.3541637
+        },
+        "durations": [
+          {
+            "duration": 0.3541637,
+            "location": "Features/test.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for already completed scenario {string}",
+    "steps": [
+      {
+        "name": "User creates an order for already completed scenario \"Inputs\\\\TC20.json\"",
+        "aggregatedDurations": {
+          "average": 0.3160424,
+          "median": 0.3160424
+        },
+        "durations": [
+          {
+            "duration": 0.3160424,
+            "location": "Features/test.feature:159"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for cancellation after cancel {string}",
+    "steps": [
+      {
+        "name": "User creates an order for cancellation after cancel \"Inputs\\\\TC32.json\"",
+        "aggregatedDurations": {
+          "average": 0.2661692,
+          "median": 0.2661692
+        },
+        "durations": [
+          {
+            "duration": 0.2661692,
+            "location": "Features/test.feature:264"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Take should not be successful for completed order",
+    "steps": [
+      {
+        "name": "Take should not be successful for completed order",
+        "aggregatedDurations": {
+          "average": 0.0009618,
+          "median": 0.0009618
+        },
+        "durations": [
+          {
+            "duration": 0.0009618,
+            "location": "Features/test.feature:163"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is cancelled by the user after take",
+    "steps": [
+      {
+        "name": "Order is cancelled by the user after take",
+        "aggregatedDurations": {
+          "average": 0.3466796,
+          "median": 0.3466796
+        },
+        "durations": [
+          {
+            "duration": 0.3466796,
+            "location": "Features/test.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for complete {string}",
+    "steps": [
+      {
+        "name": "User creates an order for complete \"Inputs\\\\TC23.json\"",
+        "aggregatedDurations": {
+          "average": 0.6400356,
+          "median": 0.6400356
+        },
+        "durations": [
+          {
+            "duration": 0.6400356,
+            "location": "Features/test.feature:189"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is created for ongoing order {string}",
+    "steps": [
+      {
+        "name": "Order is created for ongoing order \"Inputs\\\\TC2.json\"",
+        "aggregatedDurations": {
+          "average": 0.3970528,
+          "median": 0.3970528
+        },
+        "durations": [
+          {
+            "duration": 0.3970528,
+            "location": "Features/test.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver completes the order for valid scenario",
+    "steps": [
+      {
+        "name": "Driver completes the order for valid scenario",
+        "aggregatedDurations": {
+          "average": 0.0234989,
+          "median": 0.0234989
+        },
+        "durations": [
+          {
+            "duration": 0.0234989,
+            "location": "Features/test.feature:191"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for cancellation after take {string}",
+    "steps": [
+      {
+        "name": "User creates an order for cancellation after take \"Inputs\\\\TC30.json\"",
+        "aggregatedDurations": {
+          "average": 0.4443226,
+          "median": 0.4443226
+        },
+        "durations": [
+          {
+            "duration": 0.4443226,
+            "location": "Features/test.feature:247"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Take should not be successful for cancelled order after take",
+    "steps": [
+      {
+        "name": "Take should not be successful for cancelled order after take",
+        "aggregatedDurations": {
+          "average": 0.001081,
+          "median": 0.001081
+        },
+        "durations": [
+          {
+            "duration": 0.001081,
+            "location": "Features/test.feature:180"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for take {string}",
+    "steps": [
+      {
+        "name": "User creates an order for take \"Inputs\\\\TC17.json\"",
+        "aggregatedDurations": {
+          "average": 0.3333612,
+          "median": 0.3333612
+        },
+        "durations": [
+          {
+            "duration": 0.3333612,
+            "location": "Features/test.feature:137"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for cancelled order after create scenario {string}",
+    "steps": [
+      {
+        "name": "User creates an order for cancelled order after create scenario \"Inputs\\\\TC21.json\"",
+        "aggregatedDurations": {
+          "average": 0.3579933,
+          "median": 0.3579933
+        },
+        "durations": [
+          {
+            "duration": 0.3579933,
+            "location": "Features/test.feature:168"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver completes the order for the first time for scenario already completed",
+    "steps": [
+      {
+        "name": "driver completes the order for the first time for scenario already completed",
+        "aggregatedDurations": {
+          "average": 0.0236018,
+          "median": 0.0236018
+        },
+        "durations": [
+          {
+            "duration": 0.0236018,
+            "location": "Features/test.feature:223"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "complete order should not be successful",
+    "steps": [
+      {
+        "name": "complete order should not be successful",
+        "aggregatedDurations": {
+          "average": 0.0005958,
+          "median": 0.0005958
+        },
+        "durations": [
+          {
+            "duration": 0.0005958,
+            "location": "Features/test.feature:231"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is created for Fetch Order again {string}",
+    "steps": [
+      {
+        "name": "Order is created for Fetch Order again \"Inputs\\\\TC6.json\"",
+        "aggregatedDurations": {
+          "average": 0.3366393,
+          "median": 0.3366393
+        },
+        "durations": [
+          {
+            "duration": 0.3366393,
+            "location": "Features/test.feature:54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order for the second time",
+    "steps": [
+      {
+        "name": "Driver takes the order for the second time",
+        "aggregatedDurations": {
+          "average": 0.0210139,
+          "median": 0.0210139
+        },
+        "durations": [
+          {
+            "duration": 0.0210139,
+            "location": "Features/test.feature:147"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is cancelled by the user",
+    "steps": [
+      {
+        "name": "Order is cancelled by the user",
+        "aggregatedDurations": {
+          "average": 0.0351184,
+          "median": 0.0351184
+        },
+        "durations": [
+          {
+            "duration": 0.0351184,
+            "location": "Features/test.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should be created for two stops",
+    "steps": [
+      {
+        "name": "Order should be created for two stops",
+        "aggregatedDurations": {
+          "average": 0.0011564,
+          "median": 0.0011564
+        },
+        "durations": [
+          {
+            "duration": 0.0011564,
+            "location": "Features/test.feature:83"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver cancels the order for cancelled order after create",
+    "steps": [
+      {
+        "name": "driver cancels the order for cancelled order after create",
+        "aggregatedDurations": {
+          "average": 0.0504884,
+          "median": 0.0504884
+        },
+        "durations": [
+          {
+            "duration": 0.0504884,
+            "location": "Features/test.feature:169"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should be created for four stops",
+    "steps": [
+      {
+        "name": "Order should be created for four stops",
+        "aggregatedDurations": {
+          "average": 0.0012054,
+          "median": 0.0012054
+        },
+        "durations": [
+          {
+            "duration": 0.0012054,
+            "location": "Features/test.feature:97"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for completing after create -\u003e take -\u003e  cancel {string}",
+    "steps": [
+      {
+        "name": "User creates an order for completing after create -\u003e take -\u003e  cancel \"Inputs\\\\TC26.json\"",
+        "aggregatedDurations": {
+          "average": 0.3709778,
+          "median": 0.3709778
+        },
+        "durations": [
+          {
+            "duration": 0.3709778,
+            "location": "Features/test.feature:212"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is completed by the driver",
+    "steps": [
+      {
+        "name": "Order is completed by the driver",
+        "aggregatedDurations": {
+          "average": 0.047521,
+          "median": 0.047521
+        },
+        "durations": [
+          {
+            "duration": 0.047521,
+            "location": "Features/test.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user creates an order with four stops {string}",
+    "steps": [
+      {
+        "name": "user creates an order with four stops \"Inputs\\\\TC11.json\"",
+        "aggregatedDurations": {
+          "average": 0.3438953,
+          "median": 0.3438953
+        },
+        "durations": [
+          {
+            "duration": 0.3438953,
+            "location": "Features/test.feature:96"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is taken by the driver for complete",
+    "steps": [
+      {
+        "name": "Order is taken by the driver for complete",
+        "aggregatedDurations": {
+          "average": 0.2567664,
+          "median": 0.2567664
+        },
+        "durations": [
+          {
+            "duration": 0.2567664,
+            "location": "Features/test.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should be created for five stops",
+    "steps": [
+      {
+        "name": "Order should be created for five stops",
+        "aggregatedDurations": {
+          "average": 0.0010549,
+          "median": 0.0010549
+        },
+        "durations": [
+          {
+            "duration": 0.0010549,
+            "location": "Features/test.feature:104"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order for cancellation for scenario create -\u003e take",
+    "steps": [
+      {
+        "name": "Driver takes the order for cancellation for scenario create -\u003e take",
+        "aggregatedDurations": {
+          "average": 0.024978,
+          "median": 0.024978
+        },
+        "durations": [
+          {
+            "duration": 0.024978,
+            "location": "Features/test.feature:248"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for completing for scenario already completed {string}",
+    "steps": [
+      {
+        "name": "User creates an order for completing for scenario already completed \"Inputs\\\\TC27.json\"",
+        "aggregatedDurations": {
+          "average": 0.3868464,
+          "median": 0.3868464
+        },
+        "durations": [
+          {
+            "duration": 0.3868464,
+            "location": "Features/test.feature:221"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order againn for cancelled order after take",
+    "steps": [
+      {
+        "name": "Driver takes the order againn for cancelled order after take",
+        "aggregatedDurations": {
+          "average": 0.0702952,
+          "median": 0.0702952
+        },
+        "durations": [
+          {
+            "duration": 0.0702952,
+            "location": "Features/test.feature:179"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order is created for take order CANCELLED order {string}",
+    "steps": [
+      {
+        "name": "Order is created for take order CANCELLED order \"Inputs\\\\TC5.json\"",
+        "aggregatedDurations": {
+          "average": 0.3671435,
+          "median": 0.3671435
+        },
+        "durations": [
+          {
+            "duration": 0.3671435,
+            "location": "Features/test.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user completes incorrect order with order ID {int}",
+    "steps": [
+      {
+        "name": "user completes incorrect order with order ID 100000",
+        "aggregatedDurations": {
+          "average": 0.0262469,
+          "median": 0.0262469
+        },
+        "durations": [
+          {
+            "duration": 0.0262469,
+            "location": "Features/test.feature:230"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user fetched the order once taken for cancel",
+    "steps": [
+      {
+        "name": "user fetched the order once taken for cancel",
+        "aggregatedDurations": {
+          "average": 0.0517945,
+          "median": 0.0517945
+        },
+        "durations": [
+          {
+            "duration": 0.0517945,
+            "location": "Features/test.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Take should not be successful for cancelled order after create",
+    "steps": [
+      {
+        "name": "Take should not be successful for cancelled order after create",
+        "aggregatedDurations": {
+          "average": 0.0022937,
+          "median": 0.0022937
+        },
+        "durations": [
+          {
+            "duration": 0.0022937,
+            "location": "Features/test.feature:171"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user creates an order with five stops {string}",
+    "steps": [
+      {
+        "name": "user creates an order with five stops \"Inputs\\\\TC12.json\"",
+        "aggregatedDurations": {
+          "average": 0.2708735,
+          "median": 0.2708735
+        },
+        "durations": [
+          {
+            "duration": 0.2708735,
+            "location": "Features/test.feature:103"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver cancels the order for the scenario create -\u003e take -\u003e complete",
+    "steps": [
+      {
+        "name": "driver cancels the order for the scenario create -\u003e take -\u003e complete",
+        "aggregatedDurations": {
+          "average": 0.0288816,
+          "median": 0.0288816
+        },
+        "durations": [
+          {
+            "duration": 0.0288816,
+            "location": "Features/test.feature:214"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Amount is correct for three stops",
+    "steps": [
+      {
+        "name": "Amount is correct for three stops",
+        "aggregatedDurations": {
+          "average": 0.0011228,
+          "median": 0.0011228
+        },
+        "durations": [
+          {
+            "duration": 0.0011228,
+            "location": "Features/test.feature:91"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Amount is correct for duplicate stops",
+    "steps": [
+      {
+        "name": "Amount is correct for duplicate stops",
+        "aggregatedDurations": {
+          "average": 0.0010996,
+          "median": 0.0010996
+        },
+        "durations": [
+          {
+            "duration": 0.0010996,
+            "location": "Features/test.feature:112"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "customer is placing a valid json in body with automatic past timestamp {string}",
+    "steps": [
+      {
+        "name": "customer is placing a valid json in body with automatic past timestamp \"Inputs\\\\TC50.json\"",
+        "aggregatedDurations": {
+          "average": 0.0178859,
+          "median": 0.0178859
+        },
+        "durations": [
+          {
+            "duration": 0.0178859,
+            "location": "Features/test.feature:129"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes the order first",
+    "steps": [
+      {
+        "name": "driver takes the order first",
+        "aggregatedDurations": {
+          "average": 0.0247052,
+          "median": 0.0247052
+        },
+        "durations": [
+          {
+            "duration": 0.0247052,
+            "location": "Features/test.feature:146"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user cancels incorrect order with order ID {int}",
+    "steps": [
+      {
+        "name": "user cancels incorrect order with order ID 100000",
+        "aggregatedDurations": {
+          "average": 0.0294796,
+          "median": 0.0294796
+        },
+        "durations": [
+          {
+            "duration": 0.0294796,
+            "location": "Features/test.feature:273"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver completes the order before take",
+    "steps": [
+      {
+        "name": "Driver completes the order before take",
+        "aggregatedDurations": {
+          "average": 0.0202196,
+          "median": 0.0202196
+        },
+        "durations": [
+          {
+            "duration": 0.0202196,
+            "location": "Features/test.feature:198"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "customer is placing a valid json in body with automatic future timestamp {string}",
+    "steps": [
+      {
+        "name": "customer is placing a valid json in body with automatic future timestamp \"Inputs\\\\TC50.json\"",
+        "aggregatedDurations": {
+          "average": 0.3213772,
+          "median": 0.3213772
+        },
+        "durations": [
+          {
+            "duration": 0.3213772,
+            "location": "Features/test.feature:123"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver completes the order for scenario completed",
+    "steps": [
+      {
+        "name": "driver completes the order for scenario completed",
+        "aggregatedDurations": {
+          "average": 0.0354409,
+          "median": 0.0354409
+        },
+        "durations": [
+          {
+            "duration": 0.0354409,
+            "location": "Features/test.feature:161"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes the order",
+    "steps": [
+      {
+        "name": "driver takes the order",
+        "aggregatedDurations": {
+          "average": 0.0674959,
+          "median": 0.0674959
+        },
+        "durations": [
+          {
+            "duration": 0.0674959,
+            "location": "Features/test.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for cancelled order after take scenario {string}",
+    "steps": [
+      {
+        "name": "User creates an order for cancelled order after take scenario \"Inputs\\\\TC22.json\"",
+        "aggregatedDurations": {
+          "average": 0.3670526,
+          "median": 0.3670526
+        },
+        "durations": [
+          {
+            "duration": 0.3670526,
+            "location": "Features/test.feature:176"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "cancellation should be successful after take",
+    "steps": [
+      {
+        "name": "cancellation should be successful after take",
+        "aggregatedDurations": {
+          "average": 0.0006126,
+          "median": 0.0006126
+        },
+        "durations": [
+          {
+            "duration": 0.0006126,
+            "location": "Features/test.feature:250"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver cancels the order for the first time",
+    "steps": [
+      {
+        "name": "driver cancels the order for the first time",
+        "aggregatedDurations": {
+          "average": 0.027192,
+          "median": 0.027192
+        },
+        "durations": [
+          {
+            "duration": 0.027192,
+            "location": "Features/test.feature:266"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for complete before take {string}",
+    "steps": [
+      {
+        "name": "User creates an order for complete before take \"Inputs\\\\TC24.json\"",
+        "aggregatedDurations": {
+          "average": 0.4135321,
+          "median": 0.4135321
+        },
+        "durations": [
+          {
+            "duration": 0.4135321,
+            "location": "Features/test.feature:197"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Status should be COMPLETED",
+    "steps": [
+      {
+        "name": "Status should be COMPLETED",
+        "aggregatedDurations": {
+          "average": 0.0004706,
+          "median": 0.0004706
+        },
+        "durations": [
+          {
+            "duration": 0.0004706,
+            "location": "Features/test.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user cancels the order again",
+    "steps": [
+      {
+        "name": "user cancels the order again",
+        "aggregatedDurations": {
+          "average": 0.0227593,
+          "median": 0.0227593
+        },
+        "durations": [
+          {
+            "duration": 0.0227593,
+            "location": "Features/test.feature:267"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Status should be CANCELLED",
+    "steps": [
+      {
+        "name": "Status should be CANCELLED",
+        "aggregatedDurations": {
+          "average": 0.0002473,
+          "median": 0.0002473
+        },
+        "durations": [
+          {
+            "duration": 0.0002473,
+            "location": "Features/test.feature:40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver should get error for Incorrect Take",
+    "steps": [
+      {
+        "name": "driver should get error for Incorrect Take",
+        "aggregatedDurations": {
+          "average": 0.0005645,
+          "median": 0.0005645
+        },
+        "durations": [
+          {
+            "duration": 0.0005645,
+            "location": "Features/test.feature:154"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user fetched the order for cancel after take",
+    "steps": [
+      {
+        "name": "user fetched the order for cancel after take",
+        "aggregatedDurations": {
+          "average": 0.0494047,
+          "median": 0.0494047
+        },
+        "durations": [
+          {
+            "duration": 0.0494047,
+            "location": "Features/test.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "cancellation should be successful after order creation",
+    "steps": [
+      {
+        "name": "cancellation should be successful after order creation",
+        "aggregatedDurations": {
+          "average": 0.000553,
+          "median": 0.000553
+        },
+        "durations": [
+          {
+            "duration": 0.000553,
+            "location": "Features/test.feature:242"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User creates an order for completing after create -\u003e cancel {string}",
+    "steps": [
+      {
+        "name": "User creates an order for completing after create -\u003e cancel \"Inputs\\\\TC25.json\"",
+        "aggregatedDurations": {
+          "average": 0.2350276,
+          "median": 0.2350276
+        },
+        "durations": [
+          {
+            "duration": 0.2350276,
+            "location": "Features/test.feature:204"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "customer is placing an invalid json in body {string}",
+    "steps": [
+      {
+        "name": "customer is placing an invalid json in body \"Inputs\\\\TC14.json\"",
+        "aggregatedDurations": {
+          "average": 0.0372997,
+          "median": 0.0372997
+        },
+        "durations": [
+          {
+            "duration": 0.0372997,
+            "location": "Features/test.feature:117"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "cancel order should not be successful",
+    "steps": [
+      {
+        "name": "cancel order should not be successful",
+        "aggregatedDurations": {
+          "average": 0.000688,
+          "median": 0.000688
+        },
+        "durations": [
+          {
+            "duration": 0.000688,
+            "location": "Features/test.feature:274"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "complete should be not be successful for already completed order",
+    "steps": [
+      {
+        "name": "complete should be not be successful for already completed order",
+        "aggregatedDurations": {
+          "average": 0.000929,
+          "median": 0.000929
+        },
+        "durations": [
+          {
+            "duration": 0.000929,
+            "location": "Features/test.feature:225"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "complete should be successful for valid scenario",
+    "steps": [
+      {
+        "name": "complete should be successful for valid scenario",
+        "aggregatedDurations": {
+          "average": 0.0007782,
+          "median": 0.0007782
+        },
+        "durations": [
+          {
+            "duration": 0.0007782,
+            "location": "Features/test.feature:192"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should be created for three stops",
+    "steps": [
+      {
+        "name": "Order should be created for three stops",
+        "aggregatedDurations": {
+          "average": 0.0011307,
+          "median": 0.0011307
+        },
+        "durations": [
+          {
+            "duration": 0.0011307,
+            "location": "Features/test.feature:90"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Status for fetch again should be ASSIGNING",
+    "steps": [
+      {
+        "name": "Status for fetch again should be ASSIGNING",
+        "aggregatedDurations": {
+          "average": 0.0001872,
+          "median": 0.0001872
+        },
+        "durations": [
+          {
+            "duration": 0.0001872,
+            "location": "Features/test.feature:57"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user hits it with incorrect order IDs {int}",
+    "steps": [
+      {
+        "name": "user hits it with incorrect order IDs 100000",
+        "aggregatedDurations": {
+          "average": 0.3205399,
+          "median": 0.3205399
+        },
+        "durations": [
+          {
+            "duration": 0.3205399,
+            "location": "Features/test.feature:62"
+          }
+        ]
+      },
+      {
+        "name": "user hits it with incorrect order IDs 500000",
+        "aggregatedDurations": {
+          "average": 0.0275698,
+          "median": 0.0275698
+        },
+        "durations": [
+          {
+            "duration": 0.0275698,
+            "location": "Features/test.feature:62"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should be created with future timestamp",
+    "steps": [
+      {
+        "name": "Order should be created with future timestamp",
+        "aggregatedDurations": {
+          "average": 0.0011782,
+          "median": 0.0011782
+        },
+        "durations": [
+          {
+            "duration": 0.0011782,
+            "location": "Features/test.feature:124"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user cancels the order after completion",
+    "steps": [
+      {
+        "name": "user cancels the order after completion",
+        "aggregatedDurations": {
+          "average": 0.0270175,
+          "median": 0.0270175
+        },
+        "durations": [
+          {
+            "duration": 0.0270175,
+            "location": "Features/test.feature:258"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "complete should be not be successful after create -\u003e cancel",
+    "steps": [
+      {
+        "name": "complete should be not be successful after create -\u003e cancel",
+        "aggregatedDurations": {
+          "average": 0.0007476,
+          "median": 0.0007476
+        },
+        "durations": [
+          {
+            "duration": 0.0007476,
+            "location": "Features/test.feature:207"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes the order for cancellation after complete",
+    "steps": [
+      {
+        "name": "driver takes the order for cancellation after complete",
+        "aggregatedDurations": {
+          "average": 0.0350709,
+          "median": 0.0350709
+        },
+        "durations": [
+          {
+            "duration": 0.0350709,
+            "location": "Features/test.feature:256"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "complete should be not be successful before take",
+    "steps": [
+      {
+        "name": "complete should be not be successful before take",
+        "aggregatedDurations": {
+          "average": 0.0007618,
+          "median": 0.0007618
+        },
+        "durations": [
+          {
+            "duration": 0.0007618,
+            "location": "Features/test.feature:199"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user creates an order with two stops {string}",
+    "steps": [
+      {
+        "name": "user creates an order with two stops \"Inputs\\\\TC9.json\"",
+        "aggregatedDurations": {
+          "average": 0.2474653,
+          "median": 0.2474653
+        },
+        "durations": [
+          {
+            "duration": 0.2474653,
+            "location": "Features/test.feature:82"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Driver takes the order for cancellation after cancel -\u003e take",
+    "steps": [
+      {
+        "name": "Driver takes the order for cancellation after cancel -\u003e take",
+        "aggregatedDurations": {
+          "average": 0.0225729,
+          "median": 0.0225729
+        },
+        "durations": [
+          {
+            "duration": 0.0225729,
+            "location": "Features/test.feature:265"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user creates an order with three stops {string}",
+    "steps": [
+      {
+        "name": "user creates an order with three stops \"Inputs\\\\TC10.json\"",
+        "aggregatedDurations": {
+          "average": 0.3390644,
+          "median": 0.3390644
+        },
+        "durations": [
+          {
+            "duration": 0.3390644,
+            "location": "Features/test.feature:89"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user creates an order with duplicate stops {string}",
+    "steps": [
+      {
+        "name": "user creates an order with duplicate stops \"Inputs\\\\TC13.json\"",
+        "aggregatedDurations": {
+          "average": 0.4401257,
+          "median": 0.4401257
+        },
+        "durations": [
+          {
+            "duration": 0.4401257,
+            "location": "Features/test.feature:110"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user cancels the order after take",
+    "steps": [
+      {
+        "name": "user cancels the order after take",
+        "aggregatedDurations": {
+          "average": 0.0319884,
+          "median": 0.0319884
+        },
+        "durations": [
+          {
+            "duration": 0.0319884,
+            "location": "Features/test.feature:249"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes order with incorrect ID {int}",
+    "steps": [
+      {
+        "name": "driver takes order with incorrect ID 100000",
+        "aggregatedDurations": {
+          "average": 0.0184444,
+          "median": 0.0184444
+        },
+        "durations": [
+          {
+            "duration": 0.0184444,
+            "location": "Features/test.feature:153"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Order should not be created",
+    "steps": [
+      {
+        "name": "Order should not be created",
+        "aggregatedDurations": {
+          "average": 0.0009881,
+          "median": 0.0009881
+        },
+        "durations": [
+          {
+            "duration": 0.0009881,
+            "location": "Features/test.feature:118"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user fetched the order once taken",
+    "steps": [
+      {
+        "name": "user fetched the order once taken",
+        "aggregatedDurations": {
+          "average": 0.0403185,
+          "median": 0.0403185
+        },
+        "durations": [
+          {
+            "duration": 0.0403185,
+            "location": "Features/test.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "driver takes the order for scenario already completed",
+    "steps": [
+      {
+        "name": "driver takes the order for scenario already completed",
+        "aggregatedDurations": {
+          "average": 0.0267815,
+          "median": 0.0267815
+        },
+        "durations": [
+          {
+            "duration": 0.0267815,
+            "location": "Features/test.feature:222"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Take should not be successful for second time",
+    "steps": [
+      {
+        "name": "Take should not be successful for second time",
+        "aggregatedDurations": {
+          "average": 0.0009667,
+          "median": 0.0009667
+        },
+        "durations": [
+          {
+            "duration": 0.0009667,
+            "location": "Features/test.feature:148"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user cancels the order after create",
+    "steps": [
+      {
+        "name": "user cancels the order after create",
+        "aggregatedDurations": {
+          "average": 0.0203165,
+          "median": 0.0203165
+        },
+        "durations": [
+          {
+            "duration": 0.0203165,
+            "location": "Features/test.feature:241"
+          }
+        ]
+      }
+    ]
+  }
+]
